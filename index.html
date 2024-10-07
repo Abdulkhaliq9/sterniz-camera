@@ -30,7 +30,16 @@
   <body>
     <header>
       <nav>
-        <div class="logo">My Website</div>
+        <div class="logo" style="width: 100px; ">
+          <a href="index.html"
+            ><img
+              src="./images/logo.jpg"
+              alt=""
+              class="w-100 img-fluid"
+              style="object-fit: cover; border-radius:15px"
+          /></a>
+        </div>
+
         <div class="menu-icon" id="menu-icon">&#9776;</div>
         <ul class="nav-links" id="nav-links">
           <li><a href="#page1" id="link-home">Home</a></li>
@@ -45,9 +54,8 @@
             </ul>
           </li>
           <li><a href="#page15" id="link-contactus">Contact Us</a></li>
-          <li><a href="gr.html" >Gr</a></li>
+          <li><a href="gr.html">Gr</a></li>
         </ul>
-        
       </nav>
     </header>
     <main>
@@ -545,37 +553,34 @@
         navLinks.classList.toggle("active");
       });
 
-
-
       // Add event listener to track scrolling
-window.addEventListener('scroll', function() {
-  const sections = document.querySelectorAll('main > div'); // All sections in your main
-  const navLinks = document.querySelectorAll('.nav-links li a'); // All navigation links
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("main > div"); // All sections in your main
+        const navLinks = document.querySelectorAll(".nav-links li a"); // All navigation links
 
-  let currentSection = '';
+        let currentSection = "";
 
-  // Loop through each section to check which is in the viewport
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (window.scrollY >= sectionTop - sectionHeight / 3) {
-      currentSection = section.getAttribute('id');
-    }
-  });
+        // Loop through each section to check which is in the viewport
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop - sectionHeight / 3) {
+            currentSection = section.getAttribute("id");
+          }
+        });
 
-  // Remove 'active' class from all nav links
-  navLinks.forEach((link) => {
-    link.classList.remove('active');
-  });
+        // Remove 'active' class from all nav links
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+        });
 
-  // Add 'active' class to the link corresponding to the current section
-  if (currentSection) {
-    document.querySelector(`a[href*=${currentSection}]`).classList.add('active');
-  }
-});
-
+        // Add 'active' class to the link corresponding to the current section
+        if (currentSection) {
+          document
+            .querySelector(`a[href*=${currentSection}]`)
+            .classList.add("active");
+        }
+      });
     </script>
-
-   
   </body>
 </html>

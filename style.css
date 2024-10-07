@@ -10,7 +10,8 @@ body {
 } */
 #main {
   /* position: relative;  
-  overflow: hidden; */
+  */
+  overflow: hidden;
   background-color: #1137ca;
 }
 @font-face {
@@ -52,6 +53,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -123,6 +125,7 @@ border-radius: 25px;
       flex-direction: column;
       width: 100%;
       background-color: #333;
+      padding:0;
   }
 
   .nav-links li {
@@ -136,9 +139,24 @@ border-radius: 25px;
 
   .nav-links.active {
       display: flex;
+      position: absolute;
+      top: 110px;
+      right:0;
+      width: 25%;
+      transition:0.5s all ease-in-out;
   }
 }
 
+
+
+@media screen and (max-width: 460px) {
+
+  .nav-links.active {
+      
+      width: 50%;
+      transition:0.5s all ease-in-out;
+  }
+}
 
 
 .nav-links li a.active {
@@ -157,20 +175,7 @@ border-radius: 25px;
   width: 100%;
   object-fit: cover;
 }
-#page1 > nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 30px;
-  position: absolute;
-  height: 10vh;
-  background-color: transparent;
-  width: 100vw;
-}
-#page1 > nav > img {
-  margin-top: -1.7vw;
-  width: 9%;
-}
+/*  */
 #right-nav > button {
   padding: 10px 20px;
   border-radius: 50px;
