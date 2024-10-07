@@ -28,67 +28,31 @@
     />
   </head>
   <body>
-    <div id="main">
-      <header class="fixed-top" style="z-index: 9999">
-        <nav class="navbar navbar-expand-lg navbar-mainbg">
-          <div class="logo" style="width: 150px">
-            <a class="navbar-brand navbar-logo" href="index.html"
-              ><img src="./images/logo.jpg" alt="" class="img-fluid"
-            /></a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars text-white"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <div class="hori-selector">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html"> Kontaktieren Sie uns </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#aboutUs">Über uns</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#page15">Kontaktieren Sie uns </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=""> Dienstleistungen </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">En</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href=""
-                  id="academyDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Akademie
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="academyDropdown">
-                  <li><a class="dropdown-item" href="#">Sub Item 1</a></li>
-                  <li><a class="dropdown-item" href="#">Sub Item 2</a></li>
-                  <li><a class="dropdown-item" href="#">Sub Item 3</a></li>
-                </ul>
-              </li>
+    <header>
+      <nav>
+        <div class="logo">My Website</div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#page1" id="link-home">Home</a></li>
+          <li><a href="#page9" id="link-services">Services</a></li>
+          <li><a href="#aboutUs" id="link-aboutus">About Us</a></li>
+          <li class="dropdown">
+            <a href="#page11" id="link-academy">Academy &#9662;</a>
+            <ul class="dropdown-menu">
+              <li><a class="" href="#">Sachkundeprüfung nach §34a GewO </a></li>
+              <li><a class="" href="#"> Unterrichtung nach §34a GewO</a></li>
+              <li><a class="" href="#">Waffensachkunde</a></li>
             </ul>
-          </div>
-        </nav>
-      </header>
+          </li>
+          <li><a href="#page15" id="link-contactus">Contact Us</a></li>
+          <li><a href="index.html">En</a></li>
+        </ul>
+        
+      </nav>
+    </header>
+   <main>
+    <div id="main">
+      
 
       <div data-scroll data-scroll-speed="-5" id="page1">
         <div class="bottom-page1">
@@ -549,6 +513,8 @@
         </div>
       </div>
     </div>
+   </main>
+   
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
@@ -571,7 +537,7 @@
     ></script>
 
     <script src="script.js"></script>
-    <script src="language.js"></script>
+   
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -579,67 +545,42 @@
     ></script>
 
     <script>
-      // ---------Responsive-navbar-active-animation-----------
-      function test() {
-        var tabsNewAnim = $("#navbarSupportedContent");
-        var selectorNewAnim = $("#navbarSupportedContent").find("li").length;
-        var activeItemNewAnim = tabsNewAnim.find(".active");
-        var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
-        var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
-        var itemPosNewAnimTop = activeItemNewAnim.position();
-        var itemPosNewAnimLeft = activeItemNewAnim.position();
-        $(".hori-selector").css({
-          top: itemPosNewAnimTop.top + "px",
-          left: itemPosNewAnimLeft.left + "px",
-          height: activeWidthNewAnimHeight + "px",
-          width: activeWidthNewAnimWidth + "px",
-        });
-        $("#navbarSupportedContent").on("click", "li", function (e) {
-          $("#navbarSupportedContent ul li").removeClass("active");
-          $(this).addClass("active");
-          var activeWidthNewAnimHeight = $(this).innerHeight();
-          var activeWidthNewAnimWidth = $(this).innerWidth();
-          var itemPosNewAnimTop = $(this).position();
-          var itemPosNewAnimLeft = $(this).position();
-          $(".hori-selector").css({
-            top: itemPosNewAnimTop.top + "px",
-            left: itemPosNewAnimLeft.left + "px",
-            height: activeWidthNewAnimHeight + "px",
-            width: activeWidthNewAnimWidth + "px",
-          });
-        });
-      }
-      $(document).ready(function () {
-        setTimeout(function () {
-          test();
-        });
-      });
-      $(window).on("resize", function () {
-        setTimeout(function () {
-          test();
-        }, 500);
-      });
-      $(".navbar-toggler").click(function () {
-        $(".navbar-collapse").slideToggle(300);
-        setTimeout(function () {
-          test();
-        });
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
       });
 
-      // --------------add active class-on another-page move----------
-      jQuery(document).ready(function ($) {
-        // Get current path and find target link
-        var path = window.location.pathname.split("/").pop();
 
-        // Account for home page with empty path
-        if (path == "") {
-          path = "index.html";
-        }
 
-        var target = $('#navbarSupportedContent ul li a[href="' + path + '"]');
-        // Add active class to target link
-        target.parent().addClass("active");
-      });
+      // Add event listener to track scrolling
+window.addEventListener('scroll', function() {
+  const sections = document.querySelectorAll('main > div'); // All sections in your main
+  const navLinks = document.querySelectorAll('.nav-links li a'); // All navigation links
+
+  let currentSection = '';
+
+  // Loop through each section to check which is in the viewport
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (window.scrollY >= sectionTop - sectionHeight / 3) {
+      currentSection = section.getAttribute('id');
+    }
+  });
+
+  // Remove 'active' class from all nav links
+  navLinks.forEach((link) => {
+    link.classList.remove('active');
+  });
+
+  // Add 'active' class to the link corresponding to the current section
+  if (currentSection) {
+    document.querySelector(`a[href*=${currentSection}]`).classList.add('active');
+  }
+});
+
     </script>
   </body>
 </html>

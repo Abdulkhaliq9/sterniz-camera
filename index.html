@@ -45,6 +45,7 @@
             </ul>
           </li>
           <li><a href="#page15" id="link-contactus">Contact Us</a></li>
+          <li><a href="gr.html" >Gr</a></li>
         </ul>
         
       </nav>
@@ -553,7 +554,14 @@ window.addEventListener('scroll', function() {
 
   let currentSection = '';
 
-  
+  // Loop through each section to check which is in the viewport
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (window.scrollY >= sectionTop - sectionHeight / 3) {
+      currentSection = section.getAttribute('id');
+    }
+  });
 
   // Remove 'active' class from all nav links
   navLinks.forEach((link) => {
@@ -568,15 +576,6 @@ window.addEventListener('scroll', function() {
 
     </script>
 
-    <script>
-      document
-        .querySelector("#about-link")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document
-            .querySelector("#aboutUs")
-            .scrollIntoView({ behavior: "smooth" });
-        });
-    </script>
+   
   </body>
 </html>
