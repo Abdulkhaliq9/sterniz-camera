@@ -11,7 +11,7 @@ body {
 #main {
   /* position: relative;  
   */
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #1137ca;
 }
 @font-face {
@@ -140,6 +140,7 @@ border-radius: 25px;
   .nav-links.active {
       display: flex;
       position: absolute;
+      padding: 15px 0;
       top: 110px;
       right:0;
       width: 25%;
