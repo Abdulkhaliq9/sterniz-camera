@@ -11,7 +11,7 @@ body {
 #main {
   /* position: relative;  
   */
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: #1137ca;
 }
 @font-face {
@@ -195,7 +195,7 @@ border-radius: 25px;
 }
 .bottom-page1 > h1 {
   font-family: a;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 100;
   line-height: 1;
   color: #fff;
@@ -247,7 +247,7 @@ border-radius: 25px;
   font-weight: 100;
   line-height: 1.3;
   width: 90%;
-  font-size: 4vw;
+  font-size: 3vw;
   color: #dadada69;
 }
 
@@ -486,12 +486,33 @@ border-radius: 25px;
   color: #fff;
 }
 .right10-inner > h1 {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .right10-inner > p {
   margin-top: 2vw;
-  font-size: 1.3vw;
+  font-size: 3vw;
   width: 80%;
+}
+@media screen and (max-width:1024px) {
+  .right10-inner > p {
+   
+    font-size: 14px;
+  
+  }  
+}
+@media screen and (max-width:460px) {
+  .right10-inner > p {
+   
+    font-size: 12px;
+  
+  }  
+}@media screen and (max-width:375px) {
+  .right10-inner > p {
+   
+    font-size: 3vw;
+
+  
+  }  
 }
 
 #page11 {
@@ -505,7 +526,7 @@ border-radius: 25px;
   position: absolute;
   top: 5%;
   left: 10%;
-  font-size: 4vw;
+  font-size: 3vw;
   color: #000;
   font-weight: 100;
 }
@@ -541,10 +562,33 @@ border-radius: 25px;
 .right11 > h4 {
   font-weight: 100;
 }
-.right11 > h1 {
+ .right11 > h1 {
   font-size: 2vw;
 }
+.right11 >  p {
+  font-size: 1.2vw;
+  width: 450px;
+}
 
+
+@media screen and (max-width:768px) {
+  .right11 >  p {
+    font-size: 12px;
+    width: 300px;
+  }
+}
+@media screen and (max-width:460px) {
+  .right11 >  p {
+    font-size: 12px;
+    width: 180px;
+  }
+}@media screen and (max-width:375px) {
+  .right11 >  p {
+    font-size: 10px;
+    width: 150px;
+
+  }
+}
 #page12 {
   position: relative;
   height: 100vh;
@@ -566,6 +610,17 @@ border-radius: 25px;
   font-size: 1.3vw;
 }
 
+@media screen and (max-width:768px) {
+  .page12-inner > p {
+    font-size: 16px;
+    width:320px
+  }  
+}@media screen and (max-width:325px) {
+  .page12-inner > p {
+    font-size: 14px;
+    width:260px
+  }  
+}
 #page13 {
   position: relative;
   height: 50vh;
@@ -660,6 +715,11 @@ border-radius: 25px;
   color: #222222;
   font-weight: 600;
   padding-bottom: 18px;
+}
+@media screen and (max-width:768px) {
+  .sec-title h2{
+    font-size: 30px;
+  }
 }
 
 .sec-title h2:before {
@@ -838,6 +898,12 @@ border-radius: 25px;
   background: transparent;
   z-index: 0;
   border: 44px solid #0a3cce;
+}
+@media screen and (max-width:768px) {
+  .about-section .image-column .inner-column:before{
+    
+    border: 30px solid #0a3cce;
+  }
 }
 
 .about-section .image-column .image-1 {
