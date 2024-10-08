@@ -208,8 +208,9 @@ border-radius: 25px;
 }
 .bottom-page1-inner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+gap: 14px;
+  justify-content: center;
   font-family: a;
 }
 .bottom-page1-inner > button {
@@ -218,13 +219,49 @@ border-radius: 25px;
   border-radius: 50px;
   background-color: #fff;
   color: #0b48ed;
-  font-size: 16px;
+  font-size: 12px;
+  text-align: center;
+  text-wrap: nowrap;
+  width: 25%;
   font-family: b;
 }
+
+
+
+
+
+
 .bottom-page1-inner > h4 {
   font-size: 1.3vw;
   font-weight: 100;
   color: #fff;
+}
+
+
+@media screen and (max-width:768px) {
+
+  .bottom-page1 > h1{
+ 
+    font-size: 24px;
+  }.bottom-page1-inner > h4{
+ 
+    font-size: 16px;
+  }
+
+  .bottom-page1-inner > button {
+    width: 50%;
+  }
+}@media screen and (max-width:460px) {
+
+  .bottom-page1-inner > h4{
+ 
+    font-size: 16px;
+  }
+
+  .bottom-page1-inner > button {
+   font-size: 12px;
+   width: 100%;
+  }
 }
 #page2 {
   display: flex;
