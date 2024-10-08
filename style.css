@@ -552,12 +552,12 @@ border-radius: 25px;
   object-fit: cover;
 }
 .right11 {
-  padding-top: 5vw;
+  /* padding-top: 5vw; */
   color: #000;
   left: 50%;
   position: absolute;
   height: 100%;
-  width: 50%;
+  /* width: 50%; */
 }
 .right11 > h4 {
   font-weight: 100;
@@ -566,8 +566,8 @@ border-radius: 25px;
   font-size: 2vw;
 }
 .right11 >  p {
-  font-size: 1.2vw;
-  width: 450px;
+  font-size: 18px;
+  width: auto;
 }
 
 

@@ -77,72 +77,83 @@ function canvas() {
 
   function files(index) {
     var data = `
-  ../images/frames00007.png
-  ../images/frames00010.png
-  ../images/frames00013.png
-  ../images/frames00016.png
-  ../images/frames00019.png
-  ../images/frames00022.png
-  ../images/frames00025.png
-  ../images/frames00028.png
-  ../images/frames00031.png
-  ../images/frames00034.png
-  ../images/frames00037.png
-  ../images/frames00040.png
-  ../images/frames00043.png
-  ../images/frames00046.png
-  ../images/frames00049.png
-  ../images/frames00052.png
-  ../images/frames00055.png
-  ../images/frames00058.png
-  ../images/frames00061.png
-  ../images/frames00064.png
-  ../images/frames00067.png
-  ../images/frames00070.png
-  ../images/frames00073.png
-  ../images/frames00076.png
-  ../images/frames00079.png
-  ../images/frames00082.png
-  ../images/frames00085.png
-  ../images/frames00088.png
-  ../images/frames00091.png
-  ../images/frames00094.png
-  ../images/frames00097.png
-  ../images/frames00100.png
-  ../images/frames00103.png
-  ../images/frames00106.png
-  ../images/frames00109.png
-  ../images/frames00112.png
-  ../images/frames00115.png
-  ../images/frames00118.png
-  ../images/frames00121.png
-  ../images/frames00124.png
-  ../images/frames00127.png
-  ../images/frames00130.png
-  ../images/frames00133.png
-  ../images/frames00136.png
-  ../images/frames00139.png
-  ../images/frames00142.png
-  ../images/frames00145.png
-  ../images/frames00148.png
-  ../images/frames00151.png
-  ../images/frames00154.png
-  ../images/frames00157.png
-  ../images/frames00160.png
-  ../images/frames00163.png
-  ../images/frames00166.png
-  ../images/frames00169.png
-  ../images/frames00172.png
-  ../images/frames00175.png
-  ../images/frames00178.png
-  ../images/frames00181.png
-  ../images/frames00184.png
-  ../images/frames00187.png
-  ../images/frames00190.png
-  ../images/frames00193.png
-  ../images/frames00196.png
-  ../images/frames00199.png
-  ../images/frames00202.png
+../images/ani1/animation-1/ezgif-frame-001.png
+../images/ani1/animation-1/ezgif-frame-003.png
+../images/ani1/animation-1/ezgif-frame-005.png
+../images/ani1/animation-1/ezgif-frame-007.png
+../images/ani1/animation-1/ezgif-frame-009.png
+../images/ani1/animation-1/ezgif-frame-011.png
+../images/ani1/animation-1/ezgif-frame-013.png
+../images/ani1/animation-1/ezgif-frame-015.png
+../images/ani1/animation-1/ezgif-frame-017.png
+../images/ani1/animation-1/ezgif-frame-019.png
+../images/ani1/animation-1/ezgif-frame-021.png
+../images/ani1/animation-1/ezgif-frame-023.png
+../images/ani1/animation-1/ezgif-frame-025.png
+../images/ani1/animation-1/ezgif-frame-027.png
+../images/ani1/animation-1/ezgif-frame-029.png
+../images/ani1/animation-1/ezgif-frame-031.png
+../images/ani1/animation-1/ezgif-frame-033.png
+../images/ani1/animation-1/ezgif-frame-035.png
+../images/ani1/animation-1/ezgif-frame-037.png
+../images/ani1/animation-1/ezgif-frame-039.png
+../images/ani1/animation-1/ezgif-frame-041.png
+../images/ani1/animation-1/ezgif-frame-043.png
+../images/ani1/animation-1/ezgif-frame-045.png
+../images/ani1/animation-1/ezgif-frame-047.png
+../images/ani1/animation-1/ezgif-frame-049.png
+../images/ani1/animation-1/ezgif-frame-051.png
+../images/ani1/animation-1/ezgif-frame-053.png
+../images/ani1/animation-1/ezgif-frame-055.png
+../images/ani1/animation-1/ezgif-frame-057.png
+../images/ani1/animation-1/ezgif-frame-059.png
+../images/ani1/animation-1/ezgif-frame-061.png
+../images/ani1/animation-1/ezgif-frame-063.png
+../images/ani1/animation-1/ezgif-frame-065.png
+../images/ani1/animation-1/ezgif-frame-067.png
+../images/ani1/animation-1/ezgif-frame-069.png
+../images/ani1/animation-1/ezgif-frame-071.png
+../images/ani1/animation-1/ezgif-frame-073.png
+../images/ani1/animation-1/ezgif-frame-075.png
+../images/ani1/animation-1/ezgif-frame-077.png
+../images/ani1/animation-1/ezgif-frame-079.png
+../images/ani1/animation-1/ezgif-frame-081.png
+../images/ani1/animation-1/ezgif-frame-083.png
+../images/ani1/animation-1/ezgif-frame-085.png
+../images/ani1/animation-1/ezgif-frame-087.png
+../images/ani1/animation-1/ezgif-frame-089.png
+../images/ani1/animation-1/ezgif-frame-091.png
+../images/ani1/animation-1/ezgif-frame-093.png
+../images/ani1/animation-1/ezgif-frame-095.png
+../images/ani1/animation-1/ezgif-frame-097.png
+../images/ani1/animation-1/ezgif-frame-099.png
+../images/ani1/animation-1/ezgif-frame-101.png
+../images/ani1/animation-1/ezgif-frame-103.png
+../images/ani1/animation-1/ezgif-frame-105.png
+../images/ani1/animation-1/ezgif-frame-107.png
+../images/ani1/animation-1/ezgif-frame-109.png
+../images/ani1/animation-1/ezgif-frame-111.png
+../images/ani1/animation-1/ezgif-frame-113.png
+../images/ani1/animation-1/ezgif-frame-115.png
+../images/ani1/animation-1/ezgif-frame-117.png
+../images/ani1/animation-1/ezgif-frame-119.png
+../images/ani1/animation-1/ezgif-frame-121.png
+../images/ani1/animation-1/ezgif-frame-123.png
+../images/ani1/animation-1/ezgif-frame-125.png
+../images/ani1/animation-1/ezgif-frame-127.png
+../images/ani1/animation-1/ezgif-frame-129.png
+../images/ani1/animation-1/ezgif-frame-131.png
+../images/ani1/animation-1/ezgif-frame-133.png
+../images/ani1/animation-1/ezgif-frame-135.png
+../images/ani1/animation-1/ezgif-frame-137.png
+../images/ani1/animation-1/ezgif-frame-139.png
+../images/ani1/animation-1/ezgif-frame-141.png
+../images/ani1/animation-1/ezgif-frame-143.png
+../images/ani1/animation-1/ezgif-frame-145.png
+../images/ani1/animation-1/ezgif-frame-147.png
+../images/ani1/animation-1/ezgif-frame-149.png
+
+
  `;
     return data.split("\n")[index];
   }
@@ -248,73 +259,82 @@ function canvas1() {
 
   function files(index) {
     var data = `
-../images/bridges00004.png
-../images/bridges00007.png
-../images/bridges00010.png
-../images/bridges00013.png
-../images/bridges00016.png
-../images/bridges00019.png
-../images/bridges00022.png
-../images/bridges00025.png
-../images/bridges00028.png
-../images/bridges00031.png
-../images/bridges00034.png
-../images/bridges00037.png
-../images/bridges00040.png
-../images/bridges00043.png
-../images/bridges00046.png
-../images/bridges00049.png
-../images/bridges00052.png
-../images/bridges00055.png
-../images/bridges00058.png
-../images/bridges00061.png
-../images/bridges00064.png
-../images/bridges00067.png
-../images/bridges00070.png
-../images/bridges00073.png
-../images/bridges00076.png
-../images/bridges00079.png
-../images/bridges00082.png
-../images/bridges00085.png
-../images/bridges00088.png
-../images/bridges00091.png
-../images/bridges00094.png
-../images/bridges00097.png
-../images/bridges00100.png
-../images/bridges00103.png
-../images/bridges00106.png
-../images/bridges00109.png
-../images/bridges00112.png
-../images/bridges00115.png
-../images/bridges00118.png
-../images/bridges00121.png
-../images/bridges00124.png
-../images/bridges00127.png
-../images/bridges00130.png
-../images/bridges00133.png
-../images/bridges00136.png
-../images/bridges00139.png
-../images/bridges00142.png
-../images/bridges00145.png
-../images/bridges00148.png
-../images/bridges00151.png
-../images/bridges00154.png
-../images/bridges00157.png
-../images/bridges00160.png
-../images/bridges00163.png
-../images/bridges00166.png
-../images/bridges00169.png
-../images/bridges00172.png
-../images/bridges00175.png
-../images/bridges00178.png
-../images/bridges00181.png
-../images/bridges00184.png
-../images/bridges00187.png
-../images/bridges00190.png
-../images/bridges00193.png
-../images/bridges00196.png
-../images/bridges00199.png
-../images/bridges00202.png
+../images/ani1/animation-2/ezgif-frame-001.png
+../images/ani1/animation-2/ezgif-frame-003.png
+../images/ani1/animation-2/ezgif-frame-005.png
+../images/ani1/animation-2/ezgif-frame-007.png
+../images/ani1/animation-2/ezgif-frame-009.png
+../images/ani1/animation-2/ezgif-frame-011.png
+../images/ani1/animation-2/ezgif-frame-013.png
+../images/ani1/animation-2/ezgif-frame-015.png
+../images/ani1/animation-2/ezgif-frame-017.png
+../images/ani1/animation-2/ezgif-frame-019.png
+../images/ani1/animation-2/ezgif-frame-021.png
+../images/ani1/animation-2/ezgif-frame-023.png
+../images/ani1/animation-2/ezgif-frame-025.png
+../images/ani1/animation-2/ezgif-frame-027.png
+../images/ani1/animation-2/ezgif-frame-029.png
+../images/ani1/animation-2/ezgif-frame-031.png
+../images/ani1/animation-2/ezgif-frame-033.png
+../images/ani1/animation-2/ezgif-frame-035.png
+../images/ani1/animation-2/ezgif-frame-037.png
+../images/ani1/animation-2/ezgif-frame-039.png
+../images/ani1/animation-2/ezgif-frame-041.png
+../images/ani1/animation-2/ezgif-frame-043.png
+../images/ani1/animation-2/ezgif-frame-045.png
+../images/ani1/animation-2/ezgif-frame-047.png
+../images/ani1/animation-2/ezgif-frame-049.png
+../images/ani1/animation-2/ezgif-frame-051.png
+../images/ani1/animation-2/ezgif-frame-053.png
+../images/ani1/animation-2/ezgif-frame-055.png
+../images/ani1/animation-2/ezgif-frame-057.png
+../images/ani1/animation-2/ezgif-frame-059.png
+../images/ani1/animation-2/ezgif-frame-061.png
+../images/ani1/animation-2/ezgif-frame-063.png
+../images/ani1/animation-2/ezgif-frame-065.png
+../images/ani1/animation-2/ezgif-frame-067.png
+../images/ani1/animation-2/ezgif-frame-069.png
+../images/ani1/animation-2/ezgif-frame-071.png
+../images/ani1/animation-2/ezgif-frame-073.png
+../images/ani1/animation-2/ezgif-frame-075.png
+../images/ani1/animation-2/ezgif-frame-077.png
+../images/ani1/animation-2/ezgif-frame-079.png
+../images/ani1/animation-2/ezgif-frame-081.png
+../images/ani1/animation-2/ezgif-frame-083.png
+../images/ani1/animation-2/ezgif-frame-085.png
+../images/ani1/animation-2/ezgif-frame-087.png
+../images/ani1/animation-2/ezgif-frame-089.png
+../images/ani1/animation-2/ezgif-frame-091.png
+../images/ani1/animation-2/ezgif-frame-093.png
+../images/ani1/animation-2/ezgif-frame-095.png
+../images/ani1/animation-2/ezgif-frame-097.png
+../images/ani1/animation-2/ezgif-frame-099.png
+../images/ani1/animation-2/ezgif-frame-101.png
+../images/ani1/animation-2/ezgif-frame-103.png
+../images/ani1/animation-2/ezgif-frame-105.png
+../images/ani1/animation-2/ezgif-frame-107.png
+../images/ani1/animation-2/ezgif-frame-109.png
+../images/ani1/animation-2/ezgif-frame-111.png
+../images/ani1/animation-2/ezgif-frame-113.png
+../images/ani1/animation-2/ezgif-frame-115.png
+../images/ani1/animation-2/ezgif-frame-117.png
+../images/ani1/animation-2/ezgif-frame-119.png
+../images/ani1/animation-2/ezgif-frame-121.png
+../images/ani1/animation-2/ezgif-frame-123.png
+../images/ani1/animation-2/ezgif-frame-125.png
+../images/ani1/animation-2/ezgif-frame-127.png
+../images/ani1/animation-2/ezgif-frame-129.png
+../images/ani1/animation-2/ezgif-frame-131.png
+../images/ani1/animation-2/ezgif-frame-133.png
+../images/ani1/animation-2/ezgif-frame-135.png
+../images/ani1/animation-2/ezgif-frame-137.png
+../images/ani1/animation-2/ezgif-frame-139.png
+../images/ani1/animation-2/ezgif-frame-141.png
+../images/ani1/animation-2/ezgif-frame-143.png
+../images/ani1/animation-2/ezgif-frame-145.png
+../images/ani1/animation-2/ezgif-frame-147.png
+../images/ani1/animation-2/ezgif-frame-149.png
+
 `;
     return data.split("\n")[index];
   }
