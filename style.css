@@ -253,6 +253,10 @@ gap: 14px;
   }
 }@media screen and (max-width:460px) {
 
+  .bottom-page1 {
+    bottom: 13%;
+  }
+
   .bottom-page1-inner > h4{
  
     font-size: 16px;
@@ -262,6 +266,8 @@ gap: 14px;
    font-size: 12px;
    width: 100%;
   }
+
+
 }
 #page2 {
   display: flex;
@@ -503,7 +509,7 @@ gap: 14px;
 }
 #page10 {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   background-color: #0a3cce;
 }
@@ -543,12 +549,40 @@ gap: 14px;
     font-size: 12px;
   
   }  
-}@media screen and (max-width:375px) {
-  .right10-inner > p {
-   
-    font-size: 3vw;
 
-  
+  #page9
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left9 > h1{
+    top:100%;
+    bottom:2%;
+    right: 7%;
+    font-size: 12vw;
+  }
+
+  .left9 > #german-left
+  {
+    top:100%;
+    bottom:2%;
+    right: 0% !important;
+    font-size: 9vw !important;
+  }
+
+  .right9
+  {
+    width: 100%;
+  }
+
+  .right10-inner > h1 {
+    font-size: 4vw;
+  }
+}@media screen and (max-width:375px) {
+  .right10-inner > p { 
+    font-size: 3vw;
   }  
 }
 
@@ -618,6 +652,15 @@ gap: 14px;
   .right11 >  p {
     font-size: 12px;
     width: 180px;
+  }
+
+  .right11 > h1 {
+    font-size: 5vw;
+  }
+
+  #page11 > h1 
+  {
+    font-size: 12vw;
   }
 }@media screen and (max-width:375px) {
   .right11 >  p {

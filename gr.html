@@ -27,8 +27,48 @@
       referrerpolicy="no-referrer"
     />
 
-
-
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('.nav-links a');
+    
+        // Add event listener to each link
+        navLinks.forEach(function (link) {
+          link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+    
+            // Get the section ID from href
+            const targetId = link.getAttribute('href').substring(1);
+    
+            // Find the target section
+            const targetSection = document.getElementById(targetId);
+    
+            // Scroll to the target section with smooth behavior
+            if (targetSection) {
+              // Get the target position
+              const targetPosition = targetSection.offsetTop - 50; // Adjust for navbar height
+              
+              // Get the document's total height and the viewport height
+              const documentHeight = document.documentElement.scrollHeight;
+              const viewportHeight = window.innerHeight;
+    
+              // Calculate the maximum scrollable position
+              const maxScrollPosition = documentHeight - viewportHeight;
+    
+              // Ensure that the target position doesn't exceed the max scrollable position
+              const scrollPosition = Math.min(targetPosition, maxScrollPosition);
+    
+              // Scroll to the target position with smooth behavior
+              window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
+    
 
 
     <style>
@@ -50,15 +90,12 @@
   <body>
     <header>
       <nav>
-        <div class="logo" style="width: 100px">
-          <a href="gr.html"
-            ><img
-              src="./images/logo.jpg"
-              style="object-fit: cover; border-radius:15px"
-              alt=""
-              class="w-100 img-fluid"
-          /></a>
+        <div class="logo" style="width: 100px;">
+          <a href="index.html">
+            <img src="./images/logo.jpg" alt="" class="w-100 img-fluid" style="object-fit: cover; border-radius:15px" />
+          </a>
         </div>
+      
         <div class="menu-icon" id="menu-icon">&#9776;</div>
         <ul class="nav-links" id="nav-links">
           <li><a href="#page1" id="link-home">Home</a></li>
@@ -67,9 +104,9 @@
           <li class="dropdown">
             <a href="#page11" id="link-academy">Academy &#9662;</a>
             <ul class="dropdown-menu">
-              <li><a class="" href="#">Sachkundeprüfung nach §34a GewO </a></li>
-              <li><a class="" href="#"> Unterrichtung nach §34a GewO</a></li>
-              <li><a class="" href="#">Waffensachkunde</a></li>
+              <li><a href="#academy1">Sachkundeprüfung nach §34a GewO</a></li>
+              <li><a href="#academy2">Unterrichtung nach §34a GewO</a></li>
+              <li><a href="#academy3">Waffensachkunde</a></li>
             </ul>
           </li>
           <li><a href="#page15" id="link-contactus">Contact Us</a></li>
@@ -141,7 +178,7 @@
           </div>
           <canvas></canvas>
         </div>
-        <div id="page8">
+        <!-- <div id="page8">
           <div class="page8-bottom">
             <div class="flip-container">
               <div class="flipper">
@@ -162,10 +199,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div id="page9">
           <div class="left9">
-            <h1>Dienstleistungen</h1>
+            <h1 id="german-left">Dienstleistungen</h1>
           </div>
           <div class="right9">
             <div class="right9-center"></div>
@@ -218,7 +255,7 @@
               <img src="./images/img1.jpg" alt="" />
             </div>
             <div class="right11">
-              <h1>Sachkundeprüfung nach §34a GewO</h1>
+              <h1 id="academy1">Sachkundeprüfung nach §34a GewO</h1>
               <p>
                 Die Sachkundeprüfung nach §34a GewO ist eine
                 Pflichtzertifizierung für Personen, die in der
@@ -234,7 +271,7 @@
               />
             </div>
             <div class="right11">
-              <h1>Unterrichtung nach §34a GewO</h1>
+              <h1 id="academy2">Unterrichtung nach §34a GewO</h1>
               <p>
                 Die Unterrichtung nach §34a GewO ist eine Einführungsschulung
                 für Personen, die den Sicherheitsbereich betreten, ohne eine
@@ -252,7 +289,7 @@
               />
             </div>
             <div class="right11">
-              <h1>Waffensachkunde</h1>
+              <h1 id="academy3">Waffensachkunde</h1>
               <p>
                 Der Waffensachkunde-Kurs vermittelt die notwendigen Kenntnisse
                 und Qualifikationen für Personen, die mit Schusswaffen arbeiten
@@ -318,7 +355,6 @@
                   <div class="inner-column wow fadeInLeft">
                     <div class="author-desc">
                       <h2>Sterniz</h2>
-                      <span>Kamerasicherheit</span>
                     </div>
                     <figure class="image-1">
                       <a href="#" class="lightbox-image" data-fancybox="images"
@@ -516,14 +552,14 @@
             </div>
           </div>
         </div>
-        <div id="page13">
+        <!-- <div id="page13">
           <h1>
             Become an
             <br />
             early adopter
           </h1>
           <button>BUCHEN SIE EINE DEMO</button>
-        </div>
+        </div> -->
 
         <div id="page14">
           <div class="page14-inner">

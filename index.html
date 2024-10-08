@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="gr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,20 +26,59 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('.nav-links a');
+    
+        // Add event listener to each link
+        navLinks.forEach(function (link) {
+          link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+    
+            // Get the section ID from href
+            const targetId = link.getAttribute('href').substring(1);
+    
+            // Find the target section
+            const targetSection = document.getElementById(targetId);
+    
+            // Scroll to the target section with smooth behavior
+            if (targetSection) {
+              // Get the target position
+              const targetPosition = targetSection.offsetTop - 50; // Adjust for navbar height
+              
+              // Get the document's total height and the viewport height
+              const documentHeight = document.documentElement.scrollHeight;
+              const viewportHeight = window.innerHeight;
+    
+              // Calculate the maximum scrollable position
+              const maxScrollPosition = documentHeight - viewportHeight;
+    
+              // Ensure that the target position doesn't exceed the max scrollable position
+              const scrollPosition = Math.min(targetPosition, maxScrollPosition);
+    
+              // Scroll to the target position with smooth behavior
+              window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
+    
+    
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo" style="width: 100px; ">
-          <a href="index.html"
-            ><img
-              src="./images/logo.jpg"
-              alt=""
-              class="w-100 img-fluid"
-              style="object-fit: cover; border-radius:15px"
-          /></a>
+        <div class="logo" style="width: 100px;">
+          <a href="index.html">
+            <img src="./images/logo.jpg" alt="" class="w-100 img-fluid" style="object-fit: cover; border-radius:15px" />
+          </a>
         </div>
-
+      
         <div class="menu-icon" id="menu-icon">&#9776;</div>
         <ul class="nav-links" id="nav-links">
           <li><a href="#page1" id="link-home">Home</a></li>
@@ -48,15 +87,16 @@
           <li class="dropdown">
             <a href="#page11" id="link-academy">Academy &#9662;</a>
             <ul class="dropdown-menu">
-              <li><a class="" href="#">Sachkundeprüfung nach §34a GewO </a></li>
-              <li><a class="" href="#"> Unterrichtung nach §34a GewO</a></li>
-              <li><a class="" href="#">Waffensachkunde</a></li>
+              <li><a href="#academy1">Sachkundeprüfung nach §34a GewO</a></li>
+              <li><a href="#academy2">Unterrichtung nach §34a GewO</a></li>
+              <li><a href="#academy3">Waffensachkunde</a></li>
             </ul>
           </li>
           <li><a href="#page15" id="link-contactus">Contact Us</a></li>
           <li><a href="gr.html">Gr</a></li>
         </ul>
       </nav>
+      
     </header>
     <main>
       <div id="main">
@@ -117,10 +157,9 @@
           </div>
           <canvas></canvas>
         </div>
-        <div id="page8">
+        <!-- <div id="page8">
           <div class="page8-bottom">
-            <!-- <h1>Magma DTT</h1>
-          <button>LEARN MORE</button> -->
+            
 
             <div class="flip-container">
               <div class="flipper">
@@ -141,7 +180,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div id="page9">
           <div class="left9">
             <h1>Services</h1>
@@ -193,7 +232,7 @@
               <img src="./images/img1.jpg" alt="" />
             </div>
             <div class="right11">
-              <h1>Sachkundeprüfung nach §34a GewO</h1>
+              <h1 id="academy1">Sachkundeprüfung nach §34a GewO</h1>
               <p>
                 The Sachkundeprüfung nach §34a GewO is a mandatory certification
                 for individuals working in the security industry in Germany.
@@ -208,7 +247,7 @@
               />
             </div>
             <div class="right11">
-              <h1>Unterrichtung nach §34a GewO</h1>
+              <h1 id="academy2">Unterrichtung nach §34a GewO</h1>
               <p>
                 The Unterrichtung nach §34a GewO is an introductory training for
                 individuals entering the security field without needing to pass
@@ -225,7 +264,7 @@
               />
             </div>
             <div class="right11">
-              <h1>Waffensachkunde</h1>
+              <h1 id="academy3">Waffensachkunde</h1>
               <p>
                 The Waffensachkunde course provides the necessary knowledge and
                 qualifications for individuals working with firearms in the
@@ -292,7 +331,6 @@
                   <div class="inner-column wow fadeInLeft">
                     <div class="author-desc">
                       <h2>Sterniz</h2>
-                      <span>Camera Security</span>
                     </div>
                     <figure class="image-1">
                       <a href="#" class="lightbox-image" data-fancybox="images"
@@ -381,59 +419,24 @@
                       </div>
                     </div>
                   </div>
-                  <form class="row mb-3">
+                  <form class="row mb-3" id="contactForm">
                     <div class="col-md-6 p-3">
-                      <input
-                        required
-                        placeholder="first name"
-                        type="text"
-                        name=""
-                        id=""
-                      />
+                      <input required placeholder="first name" type="text" name="firstName" id="firstName" />
                     </div>
                     <div class="col-md-6 p-3">
-                      <input
-                        required
-                        placeholder="last name"
-                        type="text"
-                        name=""
-                        id=""
-                      />
+                      <input required placeholder="last name" type="text" name="lastName" id="lastName" />
                     </div>
                     <div class="col-md-6 p-3">
-                      <input
-                        required
-                        placeholder="E-mail"
-                        type="email"
-                        name=""
-                        id=""
-                      />
+                      <input required placeholder="E-mail" type="email" name="email" id="email" />
                     </div>
                     <div class="col-md-6 p-3">
-                      <input
-                        required
-                        placeholder="phone"
-                        type="tel"
-                        name=""
-                        id=""
-                      />
+                      <input required placeholder="phone" type="tel" name="phone" id="phone" />
                     </div>
-                    <div class="col-md">
-                      <textarea
-                        required
-                        name=""
-                        placeholder="write your message"
-                        id=""
-                        cols="30"
-                        rows="1"
-                      ></textarea>
+                    <div class="col-md p-3">
+                      <textarea required name="message" placeholder="write your message" id="message" cols="30" rows="3"></textarea>
                     </div>
                     <div class="text-end mt-4">
-                      <input
-                        class="btn px-4 py-3 btn-outline-dark"
-                        type="submit"
-                        value="Send Message"
-                      />
+                      <input class="btn px-4 py-3 btn-outline-dark" type="submit" value="Send Message" />
                     </div>
                   </form>
                 </div>
@@ -487,14 +490,14 @@
             </div>
           </div>
         </div>
-        <div id="page13">
+        <!-- <div id="page13">
           <h1>
             Become an
             <br />
             early adopter
           </h1>
           <button>BOOK A DEMO</button>
-        </div>
+        </div> -->
 
         <div id="page14">
           <div class="page14-inner">
@@ -580,5 +583,47 @@
         }
       });
     </script>
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Collect the form data
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
+
+    // Create the email content
+    var emailBody = `
+      First Name: ${firstName} <br/>
+      Last Name: ${lastName} <br/>
+      Email: ${email} <br/>
+      Phone: ${phone} <br/>
+      Message: ${message}
+    `;
+
+    // Send email using SMTP.js
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "muhammad.talha.khan.codes@gmail.com",
+      Password : "FDD2ADB2656CD638AD1D1F319CF5531AFA4E",
+      To : 'tk4934939@gmail.com',
+      From : "muhammad.talha.khan.codes@gmail.com",
+      Subject: "New Contact Form Submission",
+      Body: emailBody,
+    }).then(function (message) {
+      console.log(message)
+      alert("Mail sent successfully!");
+    }).catch(function (error) {
+      console.error("Failed to send email: ", error);
+      alert("Failed to send email.");
+    });
+  });
+</script>
+
   </body>
 </html>
