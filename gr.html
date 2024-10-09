@@ -27,95 +27,58 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get all navigation links
-        const navLinks = document.querySelectorAll('.nav-links a');
-    
-        // Add event listener to each link
-        navLinks.forEach(function (link) {
-          link.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default anchor behavior
-    
-            // Get the section ID from href
-            const targetId = link.getAttribute('href').substring(1);
-            console.log(targetId)
-            // Find the target section
-            const targetSection = document.getElementById(targetId);
-    
-            // Scroll to the target section with smooth behavior
-            if (targetSection) {
-              // Get the target position
-              const targetPosition = targetSection.offsetTop - 50; // Adjust for navbar height
-              
-              // Get the document's total height and the viewport height
-              const documentHeight = document.documentElement.scrollHeight;
-              const viewportHeight = window.innerHeight;
-    
-              // Calculate the maximum scrollable position
-              const maxScrollPosition = documentHeight - viewportHeight;
-    
-              // Ensure that the target position doesn't exceed the max scrollable position
-              const scrollPosition = Math.min(targetPosition, maxScrollPosition);
-    
-              // Scroll to the target position with smooth behavior
-              window.scrollTo({
-                top: scrollPosition,
-                behavior: 'smooth'
-              });
-            }
-          });
-        });
-      });
-    </script> -->
-    
-
-
     <style>
-      .page12-inner{
+      .page12-inner {
         width: 50%;
-      } .page12-inner p{
+      }
+      .page12-inner p {
         font-size: large;
       }
 
-
-@media screen and (max-width:460px) {
-  .page12-inner{
-    width: auto;
-  }
-}
-
+      @media screen and (max-width: 460px) {
+        .page12-inner {
+          width: auto;
+        }
+      }
     </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo" style="width: 100px;">
-          <a href="index.html">
-            <img src="./images/logo.jpg" alt="" class="w-100 img-fluid" style="object-fit: cover; border-radius:15px" />
-          </a>
-        </div>
-      
-        <div class="menu-icon" id="menu-icon">&#9776;</div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#page1" id="link-home">Home</a></li>
-          <li><a href="#page9" id="link-services">Services</a></li>
-          <li><a href="#aboutUs" id="link-aboutus">About Us</a></li>
-          <li class="dropdown">
-            <a href="#page11" id="link-academy">Academy &#9662;</a>
-            <ul class="dropdown-menu">
-              <li><a href="#academy1">Sachkundeprüfung nach §34a GewO</a></li>
-              <li><a href="#academy2">Unterrichtung nach §34a GewO</a></li>
-              <li><a href="#academy3">Waffensachkunde</a></li>
-            </ul>
-          </li>
-          <li><a href="#page15" id="link-contactus">Contact Us</a></li>
-          <li><a href="/index.html">En</a></li>
-        </ul>
-      </nav>
-    </header>
     <main>
       <div id="main">
+        <nav>
+          <div class="logo" style="width: 100px">
+            <a href="index.html">
+              <img
+                src="./images/logo.jpg"
+                alt=""
+                class="w-100 img-fluid"
+                style="object-fit: cover; border-radius: 15px"
+              />
+            </a>
+          </div>
+
+          <div class="menu-icon" id="menu-icon">&#9776;</div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="./pages/gr-sections.html" id="link-home">Home</a></li>
+            <li>
+              <a href="./pages/gr-sections.html" id="link-services">Services</a>
+            </li>
+            <li>
+              <a href="./pages/gr-sections.html" id="link-aboutus">About Us</a>
+            </li>
+            <li class="">
+              <a href="./pages/gr-sections.html" id="link-academy"
+                >Academy &#9662;</a
+              >
+            </li>
+            <li>
+              <a href="./pages/gr-sections.html" id="link-contactus"
+                >Contact Us</a
+              >
+            </li>
+            <li><a href="/index.html">En</a></li>
+          </ul>
+        </nav>
         <div data-scroll data-scroll-speed="-5" id="page1">
           <div class="bottom-page1">
             <h1>
@@ -581,88 +544,99 @@
 
         <footer class="section bg-footer">
           <div class="container">
-              <div class="row">
-                  <div class="col-lg-3">
-                      <div class="">
-                          <h6 class="footer-heading text-uppercase text-white">
-                              Informationen
-                          </h6>
-                          <ul class="list-unstyled footer-link mt-4">
-                              <li><a href="#aboutUs">Über Uns</a></li>
-                              <li><a href="#page15">Kontakt</a></li>
-                              <li><a href="#page15">Kontaktinformationen</a></li>
-                          </ul>
-                      </div>
-                  </div>
-      
-                  <div class="col-lg-3">
-                      <div class="">
-                          <h6 class="footer-heading text-uppercase text-white">
-                              Akademie
-                          </h6>
-                          <ul class="list-unstyled footer-link mt-4">
-                              <li><a href="#page11">Sachkundeprüfung nach §34a GewO </a></li>
-                              <li><a href="#page11">Unterrichtung nach §34a GewO</a></li>
-                              <!-- <li><a href="">Term &amp; Service</a></li> -->
-                              <li><a href="#page11">Waffensachkunde</a></li>
-                          </ul>
-                      </div>
-                  </div>
-      
-                  <div class="col-lg-2">
-                      <div class="">
-                          <h6 class="footer-heading text-uppercase text-white">Dienstleistungen</h6>
-                          <ul class="list-unstyled footer-link mt-4">
-                              <li><a href="#page10">Objektschutz</a></li>
-                              <li><a href="#page10">Parkraumüberwachung</a></li>
-                              <li><a href="#page10">Wachschutz</a></li>
-                          </ul>
-                      </div>
-                  </div>
-      
-                  <div class="col-lg-4">
-                      <div class="">
-                          <h6 class="footer-heading text-uppercase text-white">
-                              Kontaktieren Sie Uns
-                          </h6>
-                          <p class="contact-info mt-4">
-                              Kontaktieren Sie uns, wenn Sie Hilfe benötigen
-                          </p>
-                          <p class="contact-info">+491606777779</p>
-                          <div class="mt-5">
-                              <ul class="list-inline">
-                                  <li class="list-inline-item">
-                                      <a href="#">
-                                          <i class="fab facebook footer-social-icon fa-facebook-f"></i>
-                                      </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                      <a href="#">
-                                          <i class="fab twitter footer-social-icon fa-twitter"></i>
-                                      </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                      <a href="#">
-                                          <i class="fab google footer-social-icon fa-google"></i>
-                                      </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                      <a href="#">
-                                          <i class="fab apple footer-social-icon fa-apple"></i>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Informationen
+                  </h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                    <li><a href="#aboutUs">Über Uns</a></li>
+                    <li><a href="#page15">Kontakt</a></li>
+                    <li><a href="#page15">Kontaktinformationen</a></li>
+                  </ul>
+                </div>
               </div>
+
+              <div class="col-lg-3">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Akademie
+                  </h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                    <li>
+                      <a href="#page11">Sachkundeprüfung nach §34a GewO </a>
+                    </li>
+                    <li><a href="#page11">Unterrichtung nach §34a GewO</a></li>
+                    <!-- <li><a href="">Term &amp; Service</a></li> -->
+                    <li><a href="#page11">Waffensachkunde</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-2">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Dienstleistungen
+                  </h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                    <li><a href="#page10">Objektschutz</a></li>
+                    <li><a href="#page10">Parkraumüberwachung</a></li>
+                    <li><a href="#page10">Wachschutz</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Kontaktieren Sie Uns
+                  </h6>
+                  <p class="contact-info mt-4">
+                    Kontaktieren Sie uns, wenn Sie Hilfe benötigen
+                  </p>
+                  <p class="contact-info">+491606777779</p>
+                  <div class="mt-5">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i
+                            class="fab facebook footer-social-icon fa-facebook-f"
+                          ></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i
+                            class="fab twitter footer-social-icon fa-twitter"
+                          ></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i
+                            class="fab google footer-social-icon fa-google"
+                          ></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab apple footer-social-icon fa-apple"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-      
+
           <div class="text-center mt-5">
-              <p class="footer-alt mb-0 f-14">2024 © copyright, Alle Rechte vorbehalten</p>
+            <p class="footer-alt mb-0 f-14">
+              2024 © copyright, Alle Rechte vorbehalten
+            </p>
           </div>
-      </footer>
-      
+        </footer>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
