@@ -26,7 +26,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script>
+    <!-- <script>
       document.addEventListener('DOMContentLoaded', function () {
         // Get all navigation links
         const navLinks = document.querySelectorAll('.nav-links a');
@@ -41,7 +41,8 @@
     
             // Find the target section
             const targetSection = document.getElementById(targetId);
-    
+
+            console.log(targetId)
             // Scroll to the target section with smooth behavior
             if (targetSection) {
               // Get the target position
@@ -66,7 +67,7 @@
           });
         });
       });
-    </script>
+    </script> -->
     
     
   </head>
@@ -93,7 +94,7 @@
             </ul>
           </li>
           <li><a href="#page15" id="link-contactus">Contact Us</a></li>
-          <li><a href="gr.html">Gr</a></li>
+          <li><a href="/gr.html">Gr</a></li>
         </ul>
       </nav>
       
@@ -440,7 +441,7 @@
                     </div>
                   </form>
                 </div>
-                <div class="col-lg-4 col-md-12 text-white aside px-4 py-5">
+                <div class="col-lg-4 col-md-12 text-white aside px-4 py-5" id="contact-info">
                   <div class="mb-5">
                     <h1 class="h3">Contact Information</h1>
                     <p class="opacity-50">
@@ -516,97 +517,97 @@
             <div class="center14"></div>
           </div>
         </div>
-      </div>
-    </main>
-
-    <footer class="section bg-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="">
-              <h6 class="footer-heading text-uppercase text-white">
-                Information
-              </h6>
-              <ul class="list-unstyled footer-link mt-4">
-                <li><a href="">Pages</a></li>
-                <li><a href="">Our Team</a></li>
-                <li><a href="">Feuchers</a></li>
-                <li><a href="">Pricing</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="">
-              <h6 class="footer-heading text-uppercase text-white">
-                Ressources
-              </h6>
-              <ul class="list-unstyled footer-link mt-4">
-                <li><a href="">Monitoring Grader </a></li>
-                <li><a href="">Video Tutorial</a></li>
-                <li><a href="">Term &amp; Service</a></li>
-                <li><a href="">Zeeko API</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-2">
-            <div class="">
-              <h6 class="footer-heading text-uppercase text-white">Help</h6>
-              <ul class="list-unstyled footer-link mt-4">
-                <li><a href="">Sign Up </a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Terms of Services</a></li>
-                <li><a href="">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="">
-              <h6 class="footer-heading text-uppercase text-white">
-                Contact Us
-              </h6>
-              <p class="contact-info mt-4">
-                Contact us if need help withanything
-              </p>
-              <p class="contact-info">+01 123-456-7890</p>
-              <div class="mt-5">
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <a href="#"
-                      ><i
-                        class="fab facebook footer-social-icon fa-facebook-f"
-                      ></i
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"
-                      ><i class="fab twitter footer-social-icon fa-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"
-                      ><i class="fab google footer-social-icon fa-google"></i
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"
-                      ><i class="fab apple footer-social-icon fa-apple"></i
-                    ></a>
-                  </li>
-                </ul>
+        <footer class="section bg-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Information
+                  </h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#page15">Contact Us</a></li>
+                    <li><a href="#page15">Contact Information</a></li>
+                  </ul>
+                </div>
+              </div>
+    
+              <div class="col-lg-3">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Academy
+                  </h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                    <li><a href="#page11">Sachkundeprüfung nach §34a GewO </a></li>
+                    <li><a href="#page11">Unterrichtung nach §34a GewO</a></li>
+                    <!-- <li><a href="">Term &amp; Service</a></li> -->
+                    <li><a href="#page11">Waffensachkunde</a></li>
+                  </ul>
+                </div>
+              </div>
+    
+              <div class="col-lg-2">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">Services</h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                    <li><a href="#page10">Object Protection </a></li>
+                    <li><a href="#page10">Parking Monitoring</a></li>
+                    <li><a href="#page10">Guard Protection</a></li>
+                  </ul>
+                </div>
+              </div>
+    
+              <div class="col-lg-4">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Contact Us
+                  </h6>
+                  <p class="contact-info mt-4">
+                    Contact us if need help with anything
+                  </p>
+                  <p class="contact-info">+491606777779</p>
+                  <div class="mt-5">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#"
+                          ><i
+                            class="fab facebook footer-social-icon fa-facebook-f"
+                          ></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#"
+                          ><i class="fab twitter footer-social-icon fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#"
+                          ><i class="fab google footer-social-icon fa-google"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#"
+                          ><i class="fab apple footer-social-icon fa-apple"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+    
+          <div class="text-center mt-5">
+            <p class="footer-alt mb-0 f-14">2024 © copyright, All Rights Reserved</p>
+          </div>
+        </footer>
+    
       </div>
+      
+    </main>
 
-      <div class="text-center mt-5">
-        <p class="footer-alt mb-0 f-14">2019 © copyright, All Rights Reserved</p>
-      </div>
-    </footer>
-
+   
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
@@ -643,33 +644,33 @@
       });
 
       // Add event listener to track scrolling
-      window.addEventListener("scroll", function () {
-        const sections = document.querySelectorAll("main > div"); // All sections in your main
-        const navLinks = document.querySelectorAll(".nav-links li a"); // All navigation links
+      // window.addEventListener("scroll", function () {
+      //   const sections = document.querySelectorAll("main > div"); // All sections in your main
+      //   const navLinks = document.querySelectorAll(".nav-links li a"); // All navigation links
 
-        let currentSection = "";
+      //   let currentSection = "";
 
-        // Loop through each section to check which is in the viewport
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (window.scrollY >= sectionTop - sectionHeight / 3) {
-            currentSection = section.getAttribute("id");
-          }
-        });
+      //   // Loop through each section to check which is in the viewport
+      //   sections.forEach((section) => {
+      //     const sectionTop = section.offsetTop;
+      //     const sectionHeight = section.clientHeight;
+      //     if (window.scrollY >= sectionTop - sectionHeight / 3) {
+      //       currentSection = section.getAttribute("id");
+      //     }
+      //   });
 
-        // Remove 'active' class from all nav links
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-        });
+      //   // Remove 'active' class from all nav links
+      //   navLinks.forEach((link) => {
+      //     link.classList.remove("active");
+      //   });
 
-        // Add 'active' class to the link corresponding to the current section
-        if (currentSection) {
-          document
-            .querySelector(`a[href*=${currentSection}]`)
-            .classList.add("active");
-        }
-      });
+      //   // Add 'active' class to the link corresponding to the current section
+      //   if (currentSection) {
+      //     document
+      //       .querySelector(`a[href*=${currentSection}]`)
+      //       .classList.add("active");
+      //   }
+      // });
     </script>
 
 
