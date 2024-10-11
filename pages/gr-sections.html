@@ -1,690 +1,651 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gr">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sterniz</title>
+    <link rel="stylesheet" href="../style.css" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
-    />
-    <!-- <link
-      rel="stylesheet"
-      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
-      crossorigin="anonymous"
-    /> -->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
-    <link
-      rel="stylesgeet"
-      href="https://rawgit.com/creativetimofficial/material-kit/master/assets/css/material-kit.css"
-    />
-    <link rel="stylesheet" href="./pages.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <title>Sterniz</title>
+    <style>
+      .page12-inner {
+        width: 50%;
+      }
+      .page12-inner p {
+        font-size: large;
+      }
+
+      @media screen and (max-width: 460px) {
+        .page12-inner {
+          width: auto;
+        }
+      }
+    </style>
   </head>
-
-  <body class="landing-page">
-    <nav
-      class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg"
-      color-on-scroll="100"
-      id="sectionsNav"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sterniz</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../gr.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Academy
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./gr-impressum.html"
-                    >Impressum</a
-                  >
-                </li><li>
-                  <a class="dropdown-item" href="#academy"
-                    >Sachkundeprüfung nach §34a GewO</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#academy"
-                    >Unterrichtung nach §34a GewO</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#academy">Waffensachkunde</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutus">About US</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#contactus"
-                >Contact US</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./sections.html"
-                >En</a
-              >
-            </li>
-          </ul>
+  <body>
+    <main>
+      <nav class="fixed-top">
+        <div class="logo" style="width: 100px">
+          <a href="../gr.html">
+            <img
+              src="../images/logo.jpg"
+              alt=""
+              class="w-100 img-fluid"
+              style="object-fit: cover; border-radius: 15px"
+            />
+          </a>
         </div>
-      </div>
-    </nav>
 
-    <div
-      class="page-header header-filter"
-      data-parallax="true"
-      style="
-        background-image: url('https://images.unsplash.com/photo-1531449862596-16e4c62e2b10?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7261ec0c2507c69c76ec73a01162637b&auto=format&fit=crop&w=750&q=80');
-      "
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="title">Your Story Starts With Us.</h1>
-            <h4>
-              Every landing page needs a small description after the big bold
-              title, that&apos;s why we added this text here. Add here all the
-              information that can make you or your product create the first
-              impression.
-            </h4>
-            <br />
-            <a
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              target="_blank"
-              class="btn btn-danger btn-raised btn-lg"
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../gr.html" id="link-home">Home</a></li>
+          <li>
+            <a href="#page9" id="link-services">Services</a>
+          </li>
+          <li>
+            <a href="#aboutUs" id="link-aboutus">About Us</a>
+          </li>
+          <li class="">
+            <a href="#page11" id="link-academy"
+              >Academy </a
             >
-              <i class="fa fa-play"></i> Watch video
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="main main-raised">
-      <div class="about-us" id="aboutus">
-        <div class="text-center" style="margin-bottom: 100px">
-          <h2 class="title">Über Uns</h2>
-        </div>
-        <div class="we-are-block">
-          <div id="about-us-section">
-            <div class="row">
-              <div class="about-us-image col-md-6">
-                <img
-                  src="https://images.prismic.io//intuzwebsite/7a3d7e62-18ff-4502-b6cb-fde0bd23c4d0_image+%286%29.png?w=2400&q=80&auto=format,compress&fm=png8"
-                  alt="Lobby Bild img-fluid"
-                  width="808"
-                  height="458"
-                />
-              </div>
-
-              <div class="about-us-info col-md-6">
-                <h2>Wir sind Sterniz</h2>
-
-                <p>
-                  Wir sind spezialisiert auf die Bereitstellung professioneller
-                  Sicherheitsdienstleistungen und fachkundiger Schulungen für
-                  Einzelpersonen und Unternehmen. Unser Team von
-                  hochqualifizierten Mitarbeitern, kombiniert mit modernster
-                  Technologie, gewährleistet erstklassigen Schutz für
-                  Vermögenswerte, Eigentum und Menschen. Wir engagieren uns für
-                  die Bereitstellung zuverlässiger und innovativer
-                  Sicherheitslösungen, von grundlegender Überwachung bis hin zu
-                  komplexen Schutzbedürfnissen, die auf die spezifischen
-                  Anforderungen unserer Kunden zugeschnitten sind.
-                </p>
+          </li>
+          <li>
+            <a href="./gr-impressum.html" id="link-contactus"
+              > Impressum</a
+            >
+          </li>  <li>
+            <a href="#page15" id="link-contactus"
+              >Contact Us</a
+            >
+          </li>
+          <li><a href="../index.html">En</a></li>
+        </ul>
+      </nav>
+      <div id="main">
+       
+        <!-- <div id="page8">
+          <div class="page8-bottom">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img
+                    src="./images/camera-1.png"
+                    alt="Front Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="back">
+                  <img
+                    src="./images/camera-1.png"
+                    alt="Back Image"
+                    class="img-fluid"
+                  />
+                </div>
               </div>
             </div>
           </div>
-
-          <div id="history-section">
-            <div class="history-image">
+        </div> -->
+        <div id="page9">
+          <div class="left9">
+            <h1 id="german-left">Dienstleistungen</h1>
+          </div>
+          <div class="right9">
+            <div class="right9-center"></div>
+          </div>
+        </div>
+        <div id="page10">
+          <div class="right10">
+            <div class="right10-inner">
+              <h1>OBJEKTSCHUTZ</h1>
+              <p>
+                Wir nutzen fortschrittliche Technologie, Überwachungssysteme und
+                sind geschult Personal zur Überwachung und zum Schutz von
+                Gegenständen vor Diebstahl, Beschädigung usw unbefugter Zugriff.
+                Ob es sich um persönliche Gegenstände handelt, Betriebsvermögen
+                oder kritische Infrastruktur bieten wir maßgeschneidert an
+                Lösungen, die Sicherheit bieten und das Wesentliche schützen am
+                meisten.
+              </p>
+            </div>
+            <div class="right10-inner">
+              <h1>PARKPLATZÜBERWACHUNG</h1>
+              <p>
+                Mit fortschrittlichen Kameras, Sensoren und automatisierten
+                Systemen helfen wir Verhindern Sie unbefugtes Parken, regeln Sie
+                den Verkehrsfluss und verbessern Sie Sicherheit. Egal ob für den
+                privaten, gewerblichen oder öffentlichen Bereich Beim Parken
+                sind unsere Lösungen darauf ausgelegt, die Raumnutzung zu
+                optimieren und bieten Sicherheit durch Überwachung rund um die
+                Uhr.
+              </p>
+            </div>
+            <div class="right10-inner">
+              <h1>GELD- UND WERTTRANSPORT</h1>
+              <p>
+                Mit gepanzerten Fahrzeugen, geschultem Sicherheitspersonal und
+                streng Protokolle gewährleisten wir die sichere Handhabung und
+                den sicheren Transport Ihrer Wertsachen. Ob für Banken,
+                Unternehmen oder Privatkunden, unsere Der Service ist darauf
+                ausgelegt, Risiken zu minimieren und Sicherheit zu bieten.
+                Stellen Sie sicher, dass Ihre Vermögenswerte sicher und sicher
+                ihr Ziel erreichen effizient.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="page11">
+          <h1>Akademie</h1>
+          <div class="page11-inner">
+            <div class="left11">
+              <img src="../images/img1.jpg" alt="" />
+            </div>
+            <div class="right11">
+              <h1 id="academy1">Sachkundeprüfung nach §34a GewO</h1>
+              <p>
+                Die Sachkundeprüfung nach §34a GewO ist eine
+                Pflichtzertifizierung für Personen, die in der
+                Sicherheitsbranche in Deutschland tätig sind.
+              </p>
+            </div>
+          </div>
+          <div class="page11-inner">
+            <div class="left11">
               <img
-                src="https://www.scoutnetworkblog.com/wp-content/uploads/2022/01/220119.083-8.jpg"
-                width="951"
-                height="471"
-                alt="Gebäude Bild"
+                src="https://images.stockcake.com/public/1/4/6/1468dc61-78f2-40e1-bc41-be32dce6252c_large/officer-briefing-team-stockcake.jpg"
+                alt=""
               />
             </div>
-
-            <div class="history-info">
-              <h2>Unser Zukunftsziel</h2>
-
+            <div class="right11">
+              <h1 id="academy2">Unterrichtung nach §34a GewO</h1>
               <p>
-                Unser Hauptziel ist es, Sicherheit und Schutz durch ein
-                umfassendes Dienstleistungsangebot zu verbessern. Dazu gehören
-                Objektschutz, Parkplatzüberwachung, Bezirksdienst,
-                Veranstaltungschutz und Wachschutz. Wir bieten auch sicheren
-                Geld- und Werttransport, Baustellensicherheit und spezialisierte
-                Schulungen über unsere Akademie an, einschließlich
-                Sachkundeprüfung und Waffensachkunde-Zertifikate. Unser Ziel ist
-                es, für ein Höchstmaß an Professionalität und Fachkenntnis in
-                jedem Bereich der Sicherheit zu sorgen.
+                Die Unterrichtung nach §34a GewO ist eine Einführungsschulung
+                für Personen, die den Sicherheitsbereich betreten, ohne eine
+                Sicherheitskontrolle passieren zu müssen Prüfung. Es umfasst
+                grundlegende rechtliche Kenntnisse, Sicherheitsstandards und
+                praktische Aspekte der Sicherheitsarbeit.
               </p>
-
-              <a href="#contactus" title="Kontakt Button"
-                >Kontaktieren Sie uns</a
-              >
+            </div>
+          </div>
+          <div class="page11-inner">
+            <div class="left11">
+              <img
+                src="https://media.istockphoto.com/id/1131097379/photo/students-group-with-instructors-practice-gun-shooting-on-shooting-range.jpg?s=612x612&w=0&k=20&c=dAMvuAow4wAgIkcHQmEGqJuRtxTRqG2zVE3wPL0aTxw="
+                alt=""
+              />
+            </div>
+            <div class="right11">
+              <h1 id="academy3">Waffensachkunde</h1>
+              <p>
+                Der Waffensachkunde-Kurs vermittelt die notwendigen Kenntnisse
+                und Qualifikationen für Personen, die mit Schusswaffen arbeiten
+                Sicherheitsbranche.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+        <div id="page12">
+          <div class="page12-inner">
+            <h1>Vorgestellt in</h1>
+            <p>
+              Wir freuen uns, erstklassige Sicherheitslösungen anbieten zu
+              können, die von führenden Fachleuten aus verschiedenen Branchen
+              anerkannt werden. <br />
+              Unsere Fachkompetenz in den Bereichen Objektschutz, Bezirksdienst,
+              Veranstaltungsschutz, Wachschutz, Parkplatzüberwachung,
+              Baustellensicherheit und Geld- und Werttransport positioniert uns
+              an der Spitze der Sicherheit und des Schutzes für Unternehmen
+              weltweit.
+            </p>
+          </div>
+        </div>
 
-      <div class="container">
-        <div class="section text-center">
-          <div class="row">
-            <div class="col-md-8 ms-auto me-auto">
-              <h2 class="title">Dienstleistungen</h2>
+        <div id="page16 " class="bg-white">
+          <div id="aboutUs" class="container mt-5 about-section">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="content-column col-lg-6 col-md-12 col-sm-12 order-2"
+                >
+                  <div class="inner-column">
+                    <div class="sec-title">
+                      <span class="title"> Über uns</span>
+                      <h2 class="mt-lg-0 mt-5">
+                        Wir sind erfahrene Sicherheitsexperten, angetrieben von
+                        Begeisterung und Fachwissen, um erstklassigen Schutz zu
+                        bieten Dienstleistungen seit vielen Jahren.
+                      </h2>
+                    </div>
+                    <div class="text">
+                      Wir sind auf die Bereitstellung professioneller
+                      Sicherheitsdienste spezialisiert und Expertenschulungen
+                      für Privatpersonen und Unternehmen. Unser Team von
+                      hochqualifiziertem Personal, kombiniert mit
+                      fortschrittlichem Technologie sorgt für erstklassigen
+                      Vermögensschutz, Eigentum und Menschen. Wir sind der
+                      Lieferung verpflichtet Zuverlässige und innovative
+                      Sicherheitslösungen von Basic Überwachung bis hin zu
+                      komplexen Schutzanforderungen, maßgeschneidert die
+                      spezifischen Anforderungen unserer Kunden.
+                    </div>
+
+                    <div class="btn-box circle">
+                      <a href="#page15" class="theme-btn btn-style-one"
+                        >Kontaktieren Sie uns
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-column wow fadeInLeft">
+                    <div class="author-desc">
+                      <h2>Sterniz</h2>
+                    </div>
+                    <figure class="image-1">
+                      <a href="#" class="lightbox-image" data-fancybox="images"
+                        ><img
+                          title="Kamerasicherheit"
+                          src="https://images.unsplash.com/photo-1461685265823-f8d5d0b08b9b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                          alt=""
+                          class="img-fluid"
+                      /></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="sec-title">
+                <span class="title">Unser zukünftiges Ziel</span>
+                <h2>
+                  Wir wollen im Bereich Datenschutz und Geheimhaltung führend
+                  sein
+                </h2>
+              </div>
+              <div class="text">
+                Unser Hauptziel ist die Verbesserung der Sicherheit durch a
+                umfassendes Leistungsspektrum. Dazu gehören Objektschutz,
+                Parkplatzüberwachung, Revierdienst, Veranstaltungsschutz und
+                Wache Schutz. Wir bieten auch sicheren Geld- und Werttransport
+                an, Baustellensicherheit und spezielle Schulungen durch unsere
+                Akademie, einschließlich Sachkundeprüfung und Waffensachkunde
+                Zertifizierungen. Unser Ziel ist es, Seelenfrieden zu schaffen
+                unübertroffene Professionalität und Fachkompetenz in allen
+                Aspekten Sicherheit.
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="features" id="services">
+        <div id="page15" class="my-5">
+          <div class="container">
+            <div class="bg-light">
+              <div class="row">
+                <div class="col-lg-8 col-md-12 p-5 bg-white rounded-3">
+                  <div class="d-flex mb-3 flex-column">
+                    <h1 class="h5 text-capitalize my-4">
+                      Welchen Service benötigen Sie?
+                    </h1>
+                    <div class="d-flex flex-wrap">
+                      <div
+                        class="d-flex flex-wrap justify-content-center align-items-center me-4"
+                      >
+                        <input
+                          type="checkbox"
+                          name="webdev"
+                          class="form-check-input m-0 me-3"
+                          id="webdev"
+                        />
+                        <label for="webdev"> Objektschutz</label>
+                      </div>
+                      <div
+                        class="d-flex flex-wrap justify-content-center align-items-center me-4"
+                      >
+                        <input
+                          type="checkbox"
+                          name="webdes"
+                          class="form-check-input m-0 me-3"
+                          id="webdes"
+                        />
+                        <label for="webdes"> Parküberwachung</label>
+                      </div>
+                      <div
+                        class="d-flex flex-wrap justify-content-center align-items-center me-4"
+                      >
+                        <input
+                          type="checkbox"
+                          name="logodes"
+                          class="form-check-input m-0 me-3"
+                          id="logodes"
+                        />
+                        <label for="logodes"> Wachschutz</label>
+                      </div>
+                      <div
+                        class="d-flex flex-wrap justify-content-center align-items-center me-4"
+                      >
+                        <input
+                          type="checkbox"
+                          name="others"
+                          class="form-check-input m-0 me-3"
+                          id="others"
+                        />
+                        <label for="others"> Andere </label>
+                      </div>
+                    </div>
+                  </div>
+                  <form class="row mb-3">
+                    <div class="col-md-6 p-3">
+                      <input
+                        required
+                        placeholder="first name"
+                        type="text"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                    <div class="col-md-6 p-3">
+                      <input
+                        required
+                        placeholder="last name"
+                        type="text"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                    <div class="col-md-6 p-3">
+                      <input
+                        required
+                        placeholder="E-mail"
+                        type="email"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                    <div class="col-md-6 p-3">
+                      <input
+                        required
+                        placeholder="phone"
+                        type="tel"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                    <div class="col-md">
+                      <textarea
+                        required
+                        name=""
+                        placeholder="Schreiben Sie Ihre Nachricht"
+                        id=""
+                        cols="30"
+                        rows="1"
+                      ></textarea>
+                    </div>
+                    <div class="text-end mt-4">
+                      <input
+                        class="btn px-4 py-3 btn-outline-dark"
+                        type="submit"
+                        value="Nachricht senden"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="col-lg-4 col-md-12 text-white aside px-4 py-5">
+                  <div class="mb-5">
+                    <h1 class="h3">Contact Information</h1>
+                    <p class="opacity-50">
+                      <small>
+                        Füllen Sie das Formular aus und wir werden uns innerhalb
+                        von 24 Tagen bei Ihnen melden Std.
+                      </small>
+                    </p>
+                  </div>
+                  <div class="d-flex flex-column px-0">
+                    <ul class="m-0 p-0">
+                      <li
+                        class="d-flex justify-content-start align-items-center mb-4"
+                      >
+                        <span
+                          class="opacity-50 d-flex align-items-center me-3 fs-2"
+                        >
+                          <ion-icon name="call"></ion-icon>
+                        </span>
+                        <span>+491606777779</span>
+                      </li>
+                      <li class="d-flex align-items-center r mb-4">
+                        <span
+                          class="opacity-50 d-flex align-items-center me-3 fs-2"
+                        >
+                          <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <span>+Info@sterniz.de</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-start align-items-center mb-4"
+                      >
+                        <span
+                          class="opacity-50 d-flex align-items-center me-3 fs-2"
+                        >
+                          <ion-icon name="pin"></ion-icon>
+                        </span>
+                        <span
+                          >Brandaustraße 40,<br />
+                          12277 Berlin
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="page13">
+          <h1>
+            Become an
+            <br />
+            early adopter
+          </h1>
+          <button>BUCHEN SIE EINE DEMO</button>
+        </div> -->
+
+        <div id="page14">
+          <div class="page14-inner">
+            <h1>Twitter</h1>
+            <i class="ri-arrow-right-up-line"></i>
+            <div class="center14"></div>
+          </div>
+          <div class="page14-inner">
+            <h1>LinkedIn</h1>
+            <i class="ri-arrow-right-up-line"></i>
+            <div class="center14"></div>
+          </div>
+          <div class="page14-inner">
+            <h1>Instagram</h1>
+            <i class="ri-arrow-right-up-line"></i>
+            <div class="center14"></div>
+          </div>
+        </div>
+
+        <footer class="section bg-footer">
+          <div class="container">
             <div class="row">
-              <div class="col-md-4">
-                <div class="info">
-                  <div class="">
-                    <img
-                      src="https://schmidt-sicherheitsdienst.com/wp-content/uploads/2021/08/Schmidt-Sicherheit_Objektschutz_08-1568x1045.jpg"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <h4 class="info-title">OBJEKTSCHUTZ</h4>
-                  <p>
-                    Wir nutzen moderne Technologie, Überwachungssysteme und
-                    geschultes Personal, um Objekte gegen Diebstahl,
-                    Beschädigung und unbefugten Zugriff zu überwachen und zu
-                    schützen. Egal, ob es sich um persönliche Gegenstände,
-                    Geschäftsvermögen oder kritische Infrastrukturen handelt,
-                    wir bieten maßgeschneiderte Lösungen, um Sicherheit zu
-                    gewährleisten und das Wichtigste zu schützen.
+              <div class="col-lg-3">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Informationen
+                  </h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                    <li><a href="#aboutUs">Über Uns</a></li>
+                    <li><a href="#page15">Kontakt</a></li>
+                    <li><a href="#page15">Kontaktinformationen</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Akademie
+                  </h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                    <li>
+                      <a href="#page11">Sachkundeprüfung nach §34a GewO </a>
+                    </li>
+                    <li><a href="#page11">Unterrichtung nach §34a GewO</a></li>
+                    <!-- <li><a href="">Term &amp; Service</a></li> -->
+                    <li><a href="#page11">Waffensachkunde</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-2">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Dienstleistungen
+                  </h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                    <li><a href="#page10">Objektschutz</a></li>
+                    <li><a href="#page10">Parkraumüberwachung</a></li>
+                    <li><a href="#page10">Wachschutz</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">
+                    Kontaktieren Sie Uns
+                  </h6>
+                  <p class="contact-info mt-4">
+                    Kontaktieren Sie uns, wenn Sie Hilfe benötigen
                   </p>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="info">
-                  <div class="">
-                    <img
-                      src="https://cities-today.com/wp-content/uploads/2024/04/john-matychuk-393455-unsplash-1568x1045.jpg"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <h4 class="info-title">PARKPLATZÜBERWACHUNG</h4>
-                  <p>
-                    Mit modernen Kameras, Sensoren und automatisierten Systemen
-                    helfen wir, unbefugtes Parken zu verhindern, den
-                    Verkehrsfluss zu steuern und die Sicherheit zu erhöhen.
-                    Egal, ob es sich um private, gewerbliche oder öffentliche
-                    Parkplätze handelt, unsere Lösungen sind darauf ausgelegt,
-                    die Raumnutzung zu optimieren und Sicherheit mit
-                    24/7-Überwachung zu gewährleisten.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="info">
-                  <div class="">
-                    <img
-                      src="https://smallbusiness-production.s3.amazonaws.com/uploads/2018/06/Air-freight-1568x1045.jpeg"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <h4 class="info-title">GELD- UND WERTTRANSPORT</h4>
-                  <p>
-                    Mit gepanzerten Fahrzeugen, geschultem Sicherheitspersonal
-                    und strengen Protokollen gewährleisten wir die sichere
-                    Handhabung und den Transport Ihrer Wertsachen. Egal, ob für
-                    Banken, Unternehmen oder Privatkunden, unser Service ist
-                    darauf ausgelegt, Risiken zu minimieren und Sicherheit zu
-                    gewährleisten, damit Ihre Vermögenswerte sicher und
-                    effizient ihr Ziel erreichen.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section text-center">
-          <h2 class="title">Akademie</h2>
-          <div class="team">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="team-player">
-                  <div class="card card-plain">
-                    <div class="col-md-6 ms-auto me-auto">
-                      <img
-                        src="https://www.tylertech.com/portals/0/images/menu/public-safety-menu.jpg?format=jpg&quality=80"
-                        alt="Thumbnail Bild"
-                        class="img-raised rounded-circle img-fluid"
-                      />
-                    </div>
-                    <h4 class="card-title mt-3">
-                      Sachkundeprüfung nach §34a GewO <br />
-                    </h4>
-
-                    <div class="card-body">
-                      <p class="card-description">
-                        Die Sachkundeprüfung nach §34a GewO ist eine
-                        verpflichtende Zertifizierung für Personen, die in der
-                        Sicherheitsbranche in Deutschland tätig sind.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="team-player">
-                  <div class="card card-plain">
-                    <div class="col-md-6 ms-auto me-auto">
-                      <img
-                        src="https://images.stockcake.com/public/1/4/6/1468dc61-78f2-40e1-bc41-be32dce6252c_large/officer-briefing-team-stockcake.jpg"
-                        alt="Thumbnail Bild"
-                        class="img-raised rounded-circle img-fluid"
-                      />
-                    </div>
-                    <h4 class="card-title mt-3">
-                      Unterrichtung nach §34a GewO
-                    </h4>
-
-                    <div class="card-body">
-                      <p class="card-description">
-                        Die Unterrichtung nach §34a GewO ist eine
-                        Einführungsschulung für Personen, die in den
-                        Sicherheitsbereich einsteigen, ohne eine Prüfung ablegen
-                        zu müssen. Sie behandelt grundlegendes Rechtswissen,
-                        Sicherheitsstandards und praktische Aspekte der
-                        Sicherheitsarbeit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="team-player">
-                  <div class="card card-plain">
-                    <div class="col-md-6 ms-auto me-auto">
-                      <img
-                        src="https://www.yorksj.ac.uk/media/content-assets/safe-images/500-x-500/Degree-in-Policing-Masthead.jpg"
-                        alt="Thumbnail Bild"
-                        class="img-raised rounded-circle img-fluid"
-                      />
-                    </div>
-                    <h4 class="card-title mt-3">Waffensachkunde</h4>
-
-                    <div class="card-body">
-                      <p class="card-description">
-                        Der Kurs zur Waffensachkunde vermittelt das notwendige
-                        Wissen und die Qualifikationen für Personen, die im
-                        Sicherheitsbereich mit Schusswaffen arbeiten.
-                      </p>
-                    </div>
+                  <p class="contact-info">+491606777779</p>
+                  <div class="mt-5">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i
+                            class="fab facebook footer-social-icon fa-facebook-f"
+                          ></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i
+                            class="fab twitter footer-social-icon fa-twitter"
+                          ></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i
+                            class="fab google footer-social-icon fa-google"
+                          ></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab apple footer-social-icon fa-apple"></i>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="section section-contacts" id="contactus">
-          <div class="row">
-            <div class="col-md-8 ms-auto me-auto">
-              <h2 class="text-center title">Kontaktieren Sie uns</h2>
-              <h4 class="text-center description">
-                Füllen Sie das Formular aus und wir werden uns innerhalb von 24
-                Stunden bei Ihnen melden.
-              </h4>
-              <form class="contact-form mt-5">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="bmd-label-floating">Ihr Name</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="bmd-label-floating">Ihre E-Mail</label>
-                      <input type="email" class="form-control" />
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group mt-5" >
-                  <label for="exampleMessage" class="bmd-label-floating"
-                    >Ihre Nachricht</label
-                  >
-                  <textarea
-                    class="form-control"
-                    rows="4"
-                    id="exampleMessage"
-                  ></textarea>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-4 ms-auto me-auto text-center mt-4">
-                    <button class="btn btn-primary btn-raised">
-                      Nachricht senden
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+          <div class="text-center mt-5">
+            <p class="footer-alt mb-0 f-14">
+              2024 © copyright, Alle Rechte vorbehalten
+            </p>
           </div>
-        </div>
+        </footer>
       </div>
-    </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+      integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+      integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    <footer class="footer text-center">
-      <p class="footer-alt mb-0 f-14">2024 © copyright, All Rights Reserved</p>
-    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script src="script.js"></script> -->
 
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script
-      src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
-      integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-      integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
 
     <script>
-      var big_image;
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
 
-      $(document).ready(function () {
-        BrowserDetect.init();
-
-        // Init Material scripts for buttons ripples, inputs animations etc, more info on the next link https://github.com/FezVrasta/bootstrap-material-design#materialjs
-        $("body").bootstrapMaterialDesign();
-
-        window_width = $(window).width();
-
-        $navbar = $(".navbar[color-on-scroll]");
-        scroll_distance = $navbar.attr("color-on-scroll") || 500;
-
-        $navbar_collapse = $(".navbar").find(".navbar-collapse");
-
-        //  Activate the Tooltips
-        $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
-
-        // Activate Popovers
-        $('[data-toggle="popover"]').popover();
-
-        if ($(".navbar-color-on-scroll").length != 0) {
-          $(window).on("scroll", materialKit.checkScrollForTransparentNavbar);
-        }
-
-        materialKit.checkScrollForTransparentNavbar();
-
-        if (window_width >= 768) {
-          big_image = $('.page-header[data-parallax="true"]');
-          if (big_image.length != 0) {
-            $(window).on("scroll", materialKit.checkScrollForParallax);
-          }
-        }
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
       });
 
-      $(document).on("click", ".navbar-toggler", function () {
-        $toggle = $(this);
+      // Add event listener to track scrolling
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("main > div"); // All sections in your main
+        const navLinks = document.querySelectorAll(".nav-links li a"); // All navigation links
 
-        if (materialKit.misc.navbar_menu_visible == 1) {
-          $("html").removeClass("nav-open");
-          materialKit.misc.navbar_menu_visible = 0;
-          $("#bodyClick").remove();
-          setTimeout(function () {
-            $toggle.removeClass("toggled");
-          }, 550);
+        let currentSection = "";
 
-          $("html").removeClass("nav-open-absolute");
-        } else {
-          setTimeout(function () {
-            $toggle.addClass("toggled");
-          }, 580);
-
-          div = '<div id="bodyClick"></div>';
-          $(div)
-            .appendTo("body")
-            .click(function () {
-              $("html").removeClass("nav-open");
-
-              if ($("nav").hasClass("navbar-absolute")) {
-                $("html").removeClass("nav-open-absolute");
-              }
-              materialKit.misc.navbar_menu_visible = 0;
-              $("#bodyClick").remove();
-              setTimeout(function () {
-                $toggle.removeClass("toggled");
-              }, 550);
-            });
-
-          if ($("nav").hasClass("navbar-absolute")) {
-            $("html").addClass("nav-open-absolute");
+        // Loop through each section to check which is in the viewport
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop - sectionHeight / 3) {
+            currentSection = section.getAttribute("id");
           }
+        });
 
-          $("html").addClass("nav-open");
-          materialKit.misc.navbar_menu_visible = 1;
+        // Remove 'active' class from all nav links
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        // Add 'active' class to the link corresponding to the current section
+        if (currentSection) {
+          document
+            .querySelector(`a[href*=${currentSection}]`)
+            .classList.add("active");
         }
       });
-
-      materialKit = {
-        misc: {
-          navbar_menu_visible: 0,
-          window_width: 0,
-          transparent: true,
-          fixedTop: false,
-          navbar_initialized: false,
-          isWindow: document.documentMode || /Edge/.test(navigator.userAgent),
-        },
-
-        initFormExtendedDatetimepickers: function () {
-          $(".datetimepicker").datetimepicker({
-            icons: {
-              time: "fa fa-clock-o",
-              date: "fa fa-calendar",
-              up: "fa fa-chevron-up",
-              down: "fa fa-chevron-down",
-              previous: "fa fa-chevron-left",
-              next: "fa fa-chevron-right",
-              today: "fa fa-screenshot",
-              clear: "fa fa-trash",
-              close: "fa fa-remove",
-            },
-          });
-        },
-
-        initSliders: function () {
-          // Sliders for demo purpose
-          var slider = document.getElementById("sliderRegular");
-
-          noUiSlider.create(slider, {
-            start: 40,
-            connect: [true, false],
-            range: {
-              min: 0,
-              max: 100,
-            },
-          });
-
-          var slider2 = document.getElementById("sliderDouble");
-
-          noUiSlider.create(slider2, {
-            start: [20, 60],
-            connect: true,
-            range: {
-              min: 0,
-              max: 100,
-            },
-          });
-        },
-
-        checkScrollForParallax: function () {
-          oVal = $(window).scrollTop() / 3;
-          big_image.css({
-            transform: "translate3d(0," + oVal + "px,0)",
-            "-webkit-transform": "translate3d(0," + oVal + "px,0)",
-            "-ms-transform": "translate3d(0," + oVal + "px,0)",
-            "-o-transform": "translate3d(0," + oVal + "px,0)",
-          });
-        },
-
-        checkScrollForTransparentNavbar: debounce(function () {
-          if ($(document).scrollTop() > scroll_distance) {
-            if (materialKit.misc.transparent) {
-              materialKit.misc.transparent = false;
-              $(".navbar-color-on-scroll").removeClass("navbar-transparent");
-            }
-          } else {
-            if (!materialKit.misc.transparent) {
-              materialKit.misc.transparent = true;
-              $(".navbar-color-on-scroll").addClass("navbar-transparent");
-            }
-          }
-        }, 17),
-      };
-
-      // Returns a function, that, as long as it continues to be invoked, will not
-      // be triggered. The function will be called after it stops being called for
-      // N milliseconds. If `immediate` is passed, trigger the function on the
-      // leading edge, instead of the trailing.
-
-      function debounce(func, wait, immediate) {
-        var timeout;
-        return function () {
-          var context = this,
-            args = arguments;
-          clearTimeout(timeout);
-          timeout = setTimeout(function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-          }, wait);
-          if (immediate && !timeout) func.apply(context, args);
-        };
-      }
-
-      var BrowserDetect = {
-        init: function () {
-          this.browser = this.searchString(this.dataBrowser) || "Other";
-          this.version =
-            this.searchVersion(navigator.userAgent) ||
-            this.searchVersion(navigator.appVersion) ||
-            "Unknown";
-        },
-        searchString: function (data) {
-          for (var i = 0; i < data.length; i++) {
-            var dataString = data[i].string;
-            this.versionSearchString = data[i].subString;
-
-            if (dataString.indexOf(data[i].subString) !== -1) {
-              return data[i].identity;
-            }
-          }
-        },
-        searchVersion: function (dataString) {
-          var index = dataString.indexOf(this.versionSearchString);
-          if (index === -1) {
-            return;
-          }
-
-          var rv = dataString.indexOf("rv:");
-          if (this.versionSearchString === "Trident" && rv !== -1) {
-            return parseFloat(dataString.substring(rv + 3));
-          } else {
-            return parseFloat(
-              dataString.substring(index + this.versionSearchString.length + 1)
-            );
-          }
-        },
-
-        dataBrowser: [
-          {
-            string: navigator.userAgent,
-            subString: "Chrome",
-            identity: "Chrome",
-          },
-          {
-            string: navigator.userAgent,
-            subString: "MSIE",
-            identity: "Explorer",
-          },
-          {
-            string: navigator.userAgent,
-            subString: "Trident",
-            identity: "Explorer",
-          },
-          {
-            string: navigator.userAgent,
-            subString: "Firefox",
-            identity: "Firefox",
-          },
-          {
-            string: navigator.userAgent,
-            subString: "Safari",
-            identity: "Safari",
-          },
-          {
-            string: navigator.userAgent,
-            subString: "Opera",
-            identity: "Opera",
-          },
-        ],
-      };
     </script>
   </body>
 </html>
