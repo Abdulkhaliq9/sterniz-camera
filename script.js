@@ -77,16 +77,6 @@ function canvas() {
 
   function files(index) {
     var data = `
-../images/animation-1/ezgif-frame-001.png
-../images/animation-1/ezgif-frame-002.png
-../images/animation-1/ezgif-frame-003.png
-../images/animation-1/ezgif-frame-004.png
-../images/animation-1/ezgif-frame-005.png
-../images/animation-1/ezgif-frame-006.png
-../images/animation-1/ezgif-frame-007.png
-../images/animation-1/ezgif-frame-008.png
-../images/animation-1/ezgif-frame-009.png
-../images/animation-1/ezgif-frame-010.png
 ../images/animation-1/ezgif-frame-011.png
 ../images/animation-1/ezgif-frame-012.png
 ../images/animation-1/ezgif-frame-013.png
@@ -98,125 +88,64 @@ function canvas() {
 ../images/animation-1/ezgif-frame-019.png
 ../images/animation-1/ezgif-frame-020.png
 ../images/animation-1/ezgif-frame-021.png
-../images/animation-1/ezgif-frame-022.png
-../images/animation-1/ezgif-frame-023.png
-../images/animation-1/ezgif-frame-024.png
 ../images/animation-1/ezgif-frame-025.png
 ../images/animation-1/ezgif-frame-026.png
 ../images/animation-1/ezgif-frame-027.png
 ../images/animation-1/ezgif-frame-028.png
-../images/animation-1/ezgif-frame-029.png
-../images/animation-1/ezgif-frame-030.png
-../images/animation-1/ezgif-frame-031.png
 ../images/animation-1/ezgif-frame-032.png
 ../images/animation-1/ezgif-frame-033.png
 ../images/animation-1/ezgif-frame-034.png
 ../images/animation-1/ezgif-frame-035.png
 ../images/animation-1/ezgif-frame-036.png
 ../images/animation-1/ezgif-frame-037.png
-../images/animation-1/ezgif-frame-038.png
-../images/animation-1/ezgif-frame-039.png
-../images/animation-1/ezgif-frame-040.png
-../images/animation-1/ezgif-frame-041.png
 ../images/animation-1/ezgif-frame-042.png
 ../images/animation-1/ezgif-frame-043.png
-../images/animation-1/ezgif-frame-044.png
-../images/animation-1/ezgif-frame-045.png
-../images/animation-1/ezgif-frame-046.png
-../images/animation-1/ezgif-frame-047.png
-../images/animation-1/ezgif-frame-048.png
 ../images/animation-1/ezgif-frame-049.png
 ../images/animation-1/ezgif-frame-050.png
 ../images/animation-1/ezgif-frame-051.png
 ../images/animation-1/ezgif-frame-052.png
 ../images/animation-1/ezgif-frame-053.png
-../images/animation-1/ezgif-frame-054.png
-../images/animation-1/ezgif-frame-055.png
-../images/animation-1/ezgif-frame-056.png
-../images/animation-1/ezgif-frame-057.png
-../images/animation-1/ezgif-frame-058.png
-../images/animation-1/ezgif-frame-059.png
 ../images/animation-1/ezgif-frame-060.png
 ../images/animation-1/ezgif-frame-061.png
 ../images/animation-1/ezgif-frame-062.png
 ../images/animation-1/ezgif-frame-063.png
 ../images/animation-1/ezgif-frame-064.png
 ../images/animation-1/ezgif-frame-065.png
-../images/animation-1/ezgif-frame-066.png
-../images/animation-1/ezgif-frame-067.png
-../images/animation-1/ezgif-frame-068.png
-../images/animation-1/ezgif-frame-069.png
-../images/animation-1/ezgif-frame-070.png
 ../images/animation-1/ezgif-frame-071.png
 ../images/animation-1/ezgif-frame-072.png
 ../images/animation-1/ezgif-frame-073.png
 ../images/animation-1/ezgif-frame-074.png
 ../images/animation-1/ezgif-frame-075.png
-../images/animation-1/ezgif-frame-076.png
-../images/animation-1/ezgif-frame-077.png
-../images/animation-1/ezgif-frame-078.png
-../images/animation-1/ezgif-frame-079.png
-../images/animation-1/ezgif-frame-080.png
 ../images/animation-1/ezgif-frame-081.png
 ../images/animation-1/ezgif-frame-082.png
 ../images/animation-1/ezgif-frame-083.png
 ../images/animation-1/ezgif-frame-084.png
 ../images/animation-1/ezgif-frame-085.png
-../images/animation-1/ezgif-frame-086.png
-../images/animation-1/ezgif-frame-087.png
-../images/animation-1/ezgif-frame-088.png
-../images/animation-1/ezgif-frame-089.png
-../images/animation-1/ezgif-frame-090.png
 ../images/animation-1/ezgif-frame-091.png
 ../images/animation-1/ezgif-frame-092.png
 ../images/animation-1/ezgif-frame-093.png
 ../images/animation-1/ezgif-frame-094.png
 ../images/animation-1/ezgif-frame-095.png
-../images/animation-1/ezgif-frame-096.png
-../images/animation-1/ezgif-frame-097.png
-../images/animation-1/ezgif-frame-098.png
-../images/animation-1/ezgif-frame-099.png
-../images/animation-1/ezgif-frame-100.png
 ../images/animation-1/ezgif-frame-101.png
 ../images/animation-1/ezgif-frame-102.png
 ../images/animation-1/ezgif-frame-103.png
 ../images/animation-1/ezgif-frame-104.png
 ../images/animation-1/ezgif-frame-105.png
-../images/animation-1/ezgif-frame-106.png
-../images/animation-1/ezgif-frame-107.png
-../images/animation-1/ezgif-frame-108.png
-../images/animation-1/ezgif-frame-109.png
-../images/animation-1/ezgif-frame-110.png
 ../images/animation-1/ezgif-frame-111.png
 ../images/animation-1/ezgif-frame-112.png
 ../images/animation-1/ezgif-frame-113.png
 ../images/animation-1/ezgif-frame-114.png
 ../images/animation-1/ezgif-frame-115.png
-../images/animation-1/ezgif-frame-116.png
-../images/animation-1/ezgif-frame-117.png
-../images/animation-1/ezgif-frame-118.png
-../images/animation-1/ezgif-frame-119.png
-../images/animation-1/ezgif-frame-120.png
 ../images/animation-1/ezgif-frame-121.png
 ../images/animation-1/ezgif-frame-122.png
 ../images/animation-1/ezgif-frame-123.png
 ../images/animation-1/ezgif-frame-124.png
 ../images/animation-1/ezgif-frame-125.png
-../images/animation-1/ezgif-frame-126.png
-../images/animation-1/ezgif-frame-127.png
-../images/animation-1/ezgif-frame-128.png
-../images/animation-1/ezgif-frame-129.png
-../images/animation-1/ezgif-frame-130.png
 ../images/animation-1/ezgif-frame-131.png
 ../images/animation-1/ezgif-frame-132.png
 ../images/animation-1/ezgif-frame-133.png
 ../images/animation-1/ezgif-frame-134.png
 ../images/animation-1/ezgif-frame-135.png
-../images/animation-1/ezgif-frame-136.png
-../images/animation-1/ezgif-frame-137.png
-../images/animation-1/ezgif-frame-138.png
-../images/animation-1/ezgif-frame-139.png
-../images/animation-1/ezgif-frame-140.png
 ../images/animation-1/ezgif-frame-141.png
 ../images/animation-1/ezgif-frame-142.png
 ../images/animation-1/ezgif-frame-143.png
@@ -234,7 +163,7 @@ function canvas() {
     return data.split("\n")[index];
   }
 
-  const frameCount = 150;
+  const frameCount = 78;
 
   const images = [];
   const imageSeq = {
@@ -335,16 +264,6 @@ function canvas1() {
 
   function files(index) {
     var data = `
-../images/animation-2/ezgif-frame-001.png
-../images/animation-2/ezgif-frame-002.png
-../images/animation-2/ezgif-frame-003.png
-../images/animation-2/ezgif-frame-004.png
-../images/animation-2/ezgif-frame-005.png
-../images/animation-2/ezgif-frame-006.png
-../images/animation-2/ezgif-frame-007.png
-../images/animation-2/ezgif-frame-008.png
-../images/animation-2/ezgif-frame-009.png
-../images/animation-2/ezgif-frame-010.png
 ../images/animation-2/ezgif-frame-011.png
 ../images/animation-2/ezgif-frame-012.png
 ../images/animation-2/ezgif-frame-013.png
@@ -352,9 +271,6 @@ function canvas1() {
 ../images/animation-2/ezgif-frame-015.png
 ../images/animation-2/ezgif-frame-016.png
 ../images/animation-2/ezgif-frame-017.png
-../images/animation-2/ezgif-frame-018.png
-../images/animation-2/ezgif-frame-019.png
-../images/animation-2/ezgif-frame-020.png
 ../images/animation-2/ezgif-frame-021.png
 ../images/animation-2/ezgif-frame-022.png
 ../images/animation-2/ezgif-frame-023.png
@@ -362,9 +278,6 @@ function canvas1() {
 ../images/animation-2/ezgif-frame-025.png
 ../images/animation-2/ezgif-frame-026.png
 ../images/animation-2/ezgif-frame-027.png
-../images/animation-2/ezgif-frame-028.png
-../images/animation-2/ezgif-frame-029.png
-../images/animation-2/ezgif-frame-030.png
 ../images/animation-2/ezgif-frame-031.png
 ../images/animation-2/ezgif-frame-032.png
 ../images/animation-2/ezgif-frame-033.png
@@ -385,7 +298,7 @@ function canvas1() {
     return data.split("\n")[index];
   }
 
-  const frameCount = 45;
+  const frameCount = 28;
 
   const images = [];
   const imageSeq = {
